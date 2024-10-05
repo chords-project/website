@@ -1,15 +1,7 @@
 ---
 title: Guide to editing this site
 date: 2024-09-30
-authors:
-  - name: viktorstrate
-    link: https://github.com/viktorstrate
-    image: https://github.com/viktorstrate.png
-tags:
-  - Markdown
-  - Example
-  - Guide
-excludeSearch: true
+excludeSearch: false
 math: true
 ---
 

@@ -1,0 +1,18 @@
+{{ $data := dict }}
+{{ $path := "data/news.yaml" }}
+{{ with resources.Get $path }}
+    {{ with . | transform.Unmarshal }}
+        {{ $data = . }}
+    {{ end }}
+    {{ else }}
+    {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
+
+<ul style="margin-left: 0;">
+    {{ range $data.news }}
+    <li class="hx-block" style="margin-bottom: 2rem;">
+        <b>{{ .title }}</b> {{ .date }} <br/>
+        {{ .contents | markdownify }}
+    </li>
+    {{ end}}
+</ul>

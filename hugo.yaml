@@ -18,15 +18,15 @@ markup:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
-      weight: 1
+    # - name: Docs
+    #   pageRef: /docs
+    #   weight: 1
     - name: About
       pageRef: /about
       weight: 2
-    - name: News
-      pageRef: /news
-      weight: 3
+    # - name: News
+    #   pageRef: /news
+    #   weight: 3
     # - name: Contact ↗
     #   url: "https://github.com/imfing"
     #   weight: 3

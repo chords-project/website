@@ -51,7 +51,7 @@ subtitle="Read more about the Choral programming language" >}}
 
 ## News
 
-{{< news-items >}}
+{{< news-list >}}
 
 <!-- {{< cards >}}
 {{< card link="docs" title="Docs" icon="book-open" >}}

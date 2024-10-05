@@ -1,0 +1,20 @@
+{{ $data := dict }}
+{{ $path := "data/people.yaml" }}
+{{ with resources.Get $path }}
+    {{ with . | transform.Unmarshal }}
+        {{ $data = . }}
+    {{ end }}
+    {{ else }}
+    {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
+
+<ul class="hx-grid hx-gap-4" style="grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 1rem 0 0;">
+    {{ range $data.people }}
+    <li class="hx-block">
+        {{ $image := resources.Get (path.Join "images/people" .image) }}
+        {{ $image := $image.Fill "400x400 q80 webp" | images.Filter images.Grayscale }}
+        <img src="{{ $image.RelPermalink }}" width="{{ math.Div $image.Width 2 }}" height="{{ math.Div $image.Height 2 }}" loading="lazy" alt="{{ .name }}">
+        <p class="hx-text-center" style="margin-top: 0;">{{ .name }}</p>
+    </li>
+    {{ end}}
+</ul>

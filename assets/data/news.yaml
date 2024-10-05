@@ -1,0 +1,11 @@
+news:
+- title: Second news entry
+  date: 2024-10-04
+  contents: |
+    This is _another_ news entry!
+    And there's more text here.
+
+- title: First news entry
+  date: 2024-10-02
+  contents: |
+    This is a news entry!
