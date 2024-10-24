@@ -11,8 +11,8 @@
 <ul style="margin-left: 0;">
     {{ range $data.news }}
     <li class="hx-block" style="margin-bottom: 2rem;">
-        <b>{{ .title }}</b> {{ .date }} <br/>
+        <b>{{ .title }}</b> <span style="margin-left: 1rem">{{ .date }}</span> <br/>
         {{ .contents | markdownify }}
     </li>
-    {{ end}}
+    {{ end }}
 </ul>

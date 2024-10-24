@@ -5,15 +5,18 @@ width: full
 toc: false
 ---
 
-This is the about page.
+Chords is made possible by the efforts of many [people](#people) and generous [sponsors](#sponsors).
+
+## Contact
+
+You can contact us by joining this Discord server or sending an individual e-mail to any of the [people listed in the next section](#people).
+
 
 ## People
 
 {{< people-list >}}
 
-## Support
-
-Here goes the list of supporters
+## Sponsors
 
 <p style="margin-top: 2rem;">
     <div style="width: 200px; height: 100px;">
@@ -21,6 +24,3 @@ Here goes the list of supporters
     </div>
 </p>
 
-## Contact
-
-How can you get in contact with us?
