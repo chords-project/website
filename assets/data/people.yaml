@@ -1,6 +1,9 @@
 people:
 - name: Fabrizio Montesi
   image: fmontesi.jpg
+  role: Project Director, Principal Investigator
+  affiliation: University of Southern Denmark
+  website: https://www.fabriziomontesi.com
 - name: Marco Peressotti
   image: mperessotti.jpg
 - name: Dan Plyukhin
