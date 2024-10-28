@@ -1,0 +1,32 @@
+authors:
+  fmontesi:
+    name: Fabrizio Montesi
+    link: https://dblp.uni-trier.de/pid/65/3603
+  dplyukhin:
+    name: Dan Plyukhin
+    link: https://dblp.uni-trier.de/pid/232/0111
+  mperessotti:
+    name: Marco Peressotti
+    link: https://dblp.uni-trier.de/pid/136/6159
+
+publications:
+  - title: Introduction to Choreographies
+    authors:
+      - fmontesi
+    year: 2024
+    where: Cambridge University Press
+    links:
+      - label: doi.org
+        link: https://doi.org/10.1017/9781108981491
+  - title: 'Ozone: Fully Out-of-Order Choreographies'
+    authors:
+      - dplyukhin
+      - mperessotti
+      - fmontesi
+    year: 2024
+    where: 'In proceedings of ECOOP 2024, pp. 31:1-31:28'
+    links:
+      - label: doi.org
+        link: https://doi.org/10.4230/LIPIcs.ECOOP.2024.31
+      - label: bibtex
+        link: https://www.fabriziomontesi.com/research.html#bibItem-8

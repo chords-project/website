@@ -4,6 +4,4 @@ width: full
 toc: true
 ---
 
-## 2025
-
-## 2024
+{{< publications-list >}}

@@ -1,0 +1,49 @@
+{{ $data := dict }}
+{{ $path := "data/publications.yaml" }}
+{{ with resources.Get $path }}
+    {{ with . | transform.Unmarshal }}
+        {{ $data = . }}
+    {{ end }}
+    {{ else }}
+    {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
+
+{{ $years := slice }}
+{{ range $data.publications }}
+{{ $years = append .year $years}}
+{{ end}}
+
+{{ $years = $years | uniq | sort | collections.Reverse }}
+
+{{ range $years }}
+{{ $year := . }}
+
+<h2 id="year-{{$year}}">
+    {{$year}}
+    <a href="#year-{{$year}}" class="subheading-anchor" aria-label="Permalink for this section"></a>
+</h2>
+
+<ul style="margin-left: 0;">
+    {{ range where $data.publications ".year" $year }}
+    <li style="margin-bottom: 2rem;">
+        <div>
+            <ul aria-label="authors" style="margin-left: 0; display: inline-block;">
+                {{ range .authors }}
+                {{ $author := index $data.authors . }}
+                <li class="hx-inline"><a href="{{ $author.link }}" target="_blank">{{ $author.name }}</a></li>
+                {{end}}
+            </ul>
+            <span>[{{ .year }}], '{{ .title }}'. {{ .where }}.</span>
+        </div>
+        <ul aria-label="external links" style="margin-left: 0;">
+            {{ range .links }}
+                <li class="hx-inline">
+                    <a href="{{ .link }}" target="_blank" rel="noreferrer">{{ .label }}</a>
+                </li>
+            {{ end}}
+        </ul>
+    </li>
+    {{ end}}
+</ul>
+
+{{ end }}
