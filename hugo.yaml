@@ -16,6 +16,9 @@ markup:
   highlight:
     noClasses: false
 
+security:
+  enableInlineShortcodes: true
+
 menu:
   main:
     # - name: Docs
@@ -57,7 +60,12 @@ menu:
     #   params:
     #     icon: x-twitter
 
+  
+
 params:
+  page:
+    width: full
+
   navbar:
     displayTitle: true
     displayLogo: false

@@ -1,7 +1,7 @@
 ---
 title: Publications
-width: full
-toc: true
+toc: false
+weight: 4
 ---
 
 {{< publications-list >}}

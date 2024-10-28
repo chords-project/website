@@ -1,7 +1,6 @@
 ---
-# title: Chords Project
 toc: false
-width: full
+weight: 1
 ---
 
 <div class="hx-mt-6 hx-mb-6">
@@ -49,7 +48,7 @@ You can follow our progress on this website. If you are interested in Chords and
 Choral: Object-oriented Choreographic Programming
 {{< /callout >}}
 </a> -->
-<!-- 
+<!--
 <div class="hideUnderline">
 
 {{< card
