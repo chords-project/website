@@ -10,35 +10,61 @@ people:
     role: Project Director, Principal Investigator
     affiliation: University of Southern Denmark
     website: https://www.fabriziomontesi.com
+    email: fmontesi@imada.sdu.dk
 
   - name: Marco Peressotti
     image: mperessotti.jpg
+    role: Associate Professor
+    website: https://marcoperessotti.com/
+    email: peressotti@imada.sdu.dk
 
   - name: Dan Plyukhin
     image: dplyukhin.jpg
+    role: Postdoctoral Researcher
+    website: https://dplyukhin.github.io/
+    email: dplyukhin@imada.sdu.dk
 
   - name: Xueying Qin
     image: xqin.jpg
+    role: Postdoctoral Researcher
+    website: https://xyunknown.github.io/
+    email: xyqin@imada.sdu.dk
 
   - name: Viktor Strate Kløvedal
     image: viktorstrate.jpg
+    role: PhD Student
+    website: https://qpqp.dk/
+    email: viktorstrate@imada.sdu.dk
 
 sponsors:
   - name: European Research Council
     logo: /images/logos/erc-logo.svg
     link: https://erc.europa.eu/
+    body: >
+      This is the description for this sponsor
+
+      It _supports_ **Markdown**.
 
   - name: Villum Foundation
     logo: /images/logos/villum-logo.png
     link: https://veluxfoundations.dk/en
+    body: >
+      This is the description for this sponsor
+      It _supports_ **Markdown**.
 
   - name: Independent Research Fund Denmark
     logo: /images/logos/irfd-logo.png
     link: https://dff.dk/en/
+    body: >
+      This is the description for this sponsor
+      It _supports_ **Markdown**.
 
   - name: University of Southern Denmark
     logo: /images/logos/sdu-logo.svg
     link: https://sdu.dk/en
+    body: >
+      This is the description for this sponsor
+      It _supports_ **Markdown**.
 ---
 
 Chords is made possible by the efforts of many [people](#people) and generous [sponsors](#sponsors).
@@ -46,6 +72,8 @@ Chords is made possible by the efforts of many [people](#people) and generous [s
 ## Contact
 
 You can contact us by joining this Discord server or sending an individual e-mail to any of the [people listed in the next section](#people).
+
+<!--more-->
 
 ## People
 
@@ -57,7 +85,18 @@ You can contact us by joining this Discord server or sending an individual e-mai
         {{ $image := resources.Get (path.Join "images/people" .image) }}
         {{ $image := $image.Fill "400x400 q80 webp" | images.Filter images.Grayscale }}
         <img src="{{ $image.RelPermalink }}" width="{{ math.Div $image.Width 2 }}" height="{{ math.Div $image.Height 2 }}" loading="lazy" alt="{{ .name }}">
-        <p class="hx-text-center" style="margin-top: 0;">{{ .name }}</p>
+        <div style="text-align: center;">
+          <div><b>{{ .name }}</b>,</div>
+          <div>{{ .role }}</div>
+          <div style="display: flex; gap: 0.5rem; justify-content: center; margin-top: 0.4rem;">
+            <a href="mailto:{{.email}}" title="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <a href="{{ .website }}" title="Website">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </a>
+          </div>
+        </div>
     </li>
     {{ end}}
 </ul>
@@ -68,14 +107,23 @@ You can contact us by joining this Discord server or sending an individual e-mai
 
 {{< sponsor.inline >}}
 
-<ul style="margin-left: 0; display: inline-flex; gap: 0 4rem; flex-wrap: wrap; align-items: center; justify-content: center; width: 100%;">
-    {{ range .Page.Param "sponsors" }}
-    <li style="margin: 0; display: block;">
-        <a href="{{.link}}" target="_blank">
-            <img style="margin: 2rem 0" width="200" height="200" src="{{.logo}}" alt="{{.name}}" loading="lazy">
-        </a>
-    </li>
-    {{ end }}
-</ul>
+{{ range .Page.Param "sponsors" }}
+
+<div style="display: inline-flex; flex-wrap: wrap; gap: 0 2rem; align-items: center; margin-top: 2rem;">
+  <img src="{{.logo}}" alt="{{.name}}" width="200" height="200" loading="lazy" />
+  <div style="padding: 1rem; flex: 1 1 300px;">
+    <h3>{{.name}}</h3>
+    <p>{{.body | markdownify }}</p>
+  </div>
+</div>
+
+{{ end }}
 
 {{< /sponsor.inline >}}
+
+<hr style="margin-top: 5rem;" />
+
+Co-funded by the European Union (ERC, CHORDS, 101124225).
+Views and opinions expressed are however those of the authors only
+and do not necessarily reflect those of the European Union or the European Research Council.
+Neither the European Union nor the granting authority can be held responsible for them.

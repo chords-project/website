@@ -10,7 +10,7 @@ This is the about page.
 
 ### Book: Introduction to Choreographies
 
-<div style="display: inline-flex; flex-wrap: wrap; align-items: center;">
+<div style="display: inline-flex; flex-wrap: wrap; gap: 0 2rem; align-items: center;">
 <img src="/images/itc-cover.webp" alt="Introduction to Choreographies (cover)" width="200" />
 <div style="padding: 1rem; flex: 1 1 300px;">
 
@@ -27,7 +27,7 @@ The book _Introduction to Choreographies_ (Cambridge University Press) is a peda
 
 ### Ozone
 
-<div style="display: inline-flex; flex-wrap: wrap; align-items: center;">
+<div style="display: inline-flex; flex-wrap: wrap; gap: 0 2rem; align-items: center;">
 <img src="/images/ozone.png" alt="A screenshot from the Ozone article" width="300" />
 <div style="padding: 1rem; flex: 1 1 300px;">
 

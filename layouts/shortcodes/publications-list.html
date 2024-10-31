@@ -25,20 +25,24 @@
 
 <ul style="margin-left: 0;">
     {{ range where $data.publications ".year" $year }}
-    <li style="margin-bottom: 2rem;">
+    <li style="display: block; margin-bottom: 1rem;">
         <div>
             <ul aria-label="authors" style="margin-left: 0; display: inline-block;">
                 {{ range .authors }}
                 {{ $author := index $data.authors . }}
-                <li class="hx-inline"><a href="{{ $author.link }}" target="_blank">{{ $author.name }}</a></li>
+                <li class="hx-inline"><a href="{{ $author.link }}" target="_blank">{{ $author.name }}</a>, </li>
                 {{end}}
             </ul>
-            <span>[{{ .year }}], '{{ .title }}'. {{ .where }}.</span>
+            <b>{{ .title }}.</b> {{ .where }}.
         </div>
         <ul aria-label="external links" style="margin-left: 0;">
-            {{ range .links }}
+            {{ $linksLength := math.Sub (.links | len) 1 }}
+            {{ range $index, $element := .links }}
                 <li class="hx-inline">
-                    <a href="{{ .link }}" target="_blank" rel="noreferrer">{{ .label }}</a>
+                    <a href="{{ $element.link }}" target="_blank" rel="noreferrer">{{ $element.label }}</a>
+                    {{ if ne $linksLength $index }}
+                    <span aria-hidden="true"> | </span>
+                    {{ end }}
                 </li>
             {{ end}}
         </ul>

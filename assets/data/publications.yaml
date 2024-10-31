@@ -8,6 +8,9 @@ authors:
   mperessotti:
     name: Marco Peressotti
     link: https://dblp.uni-trier.de/pid/136/6159
+  sgiallorenzo:
+    name: Saverio Giallorenzo
+    link: https://dblp.uni-trier.de/pid/146/2078
 
 publications:
   - title: Introduction to Choreographies
@@ -18,6 +21,7 @@ publications:
     links:
       - label: doi.org
         link: https://doi.org/10.1017/9781108981491
+
   - title: 'Ozone: Fully Out-of-Order Choreographies'
     authors:
       - dplyukhin
@@ -28,5 +32,22 @@ publications:
     links:
       - label: doi.org
         link: https://doi.org/10.4230/LIPIcs.ECOOP.2024.31
-      - label: bibtex
-        link: https://www.fabriziomontesi.com/research.html#bibItem-8
+      - label: Cite
+        link: https://dblp.org/rec/conf/ecoop/PlyukhinPM24.html?view=bibtex
+      - label: Video
+        link: https://www.youtube.com/watch?v=23y1WCdvMX4
+      - label: Slides
+        link: https://dplyukhin.github.io/files/ecoop2024-slides.pdf
+
+  - title: 'Choral: Object-oriented Choreographic Programming'
+    where: 'In ACM Trans. Program. Lang. Syst. 46.'
+    authors:
+      - sgiallorenzo
+      - fmontesi
+      - mperessotti
+    year: 2024
+    links:
+      - label: doi.org
+        link: https://doi.org/10.1145/3632398
+      - label: Website
+        link: https://www.choral-lang.org/
