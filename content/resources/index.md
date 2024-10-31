@@ -28,7 +28,7 @@ The book _Introduction to Choreographies_ (Cambridge University Press) is a peda
 ### Ozone
 
 <div style="display: inline-flex; flex-wrap: wrap; gap: 0 2rem; align-items: center;">
-<img src="/images/ozone.png" alt="A screenshot from the Ozone article" width="300" />
+<img src="/images/ozone.png" alt="A screenshot from the Ozone article" width="500" />
 <div style="padding: 1rem; flex: 1 1 300px;">
 
 [Ozone](https://github.com/dplyukhin/ozone) is a library that lets programmers safely use Java Futures in Choral code. With Ozone, programmers can write endpoint code that handles requests in parallel or returns values asynchronously.
