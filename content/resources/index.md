@@ -4,8 +4,6 @@ toc: true
 weight: 3
 ---
 
-This is the about page.
-
 ## Learning Material
 
 ### Book: Introduction to Choreographies

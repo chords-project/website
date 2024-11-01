@@ -13,15 +13,6 @@ authors:
     link: https://dblp.uni-trier.de/pid/146/2078
 
 publications:
-  - title: Introduction to Choreographies
-    authors:
-      - fmontesi
-    year: 2024
-    where: Cambridge University Press
-    links:
-      - label: doi.org
-        link: https://doi.org/10.1017/9781108981491
-
   - title: 'Ozone: Fully Out-of-Order Choreographies'
     authors:
       - dplyukhin
@@ -51,3 +42,11 @@ publications:
         link: https://doi.org/10.1145/3632398
       - label: Website
         link: https://www.choral-lang.org/
+  - title: Introduction to Choreographies
+    authors:
+      - fmontesi
+    year: 2023
+    where: Cambridge University Press
+    links:
+      - label: doi.org
+        link: https://doi.org/10.1017/9781108981491

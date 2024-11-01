@@ -41,30 +41,25 @@ sponsors:
     logo: /images/logos/erc-logo.svg
     link: https://erc.europa.eu/
     body: >
-      This is the description for this sponsor
-
-      It _supports_ **Markdown**.
+      ERC Consolidator Grant [CHORDS](https://www.fabriziomontesi.com/projects/chords/) (2024--2029).
 
   - name: Villum Foundation
     logo: /images/logos/villum-logo.png
     link: https://veluxfoundations.dk/en
     body: >
-      This is the description for this sponsor
-      It _supports_ **Markdown**.
+      VILLUM Young Investigator Project [CHOCO](https://www.fabriziomontesi.com/projects/choco/) (2020--2025) and VILLUM Synergy Initiation Project [X-IDF](https://www.sdu.dk/en/forskning/forskningsenheder/samf/digitaldemocracycentre/researchprojects/x-idf) (2023--2025).
 
   - name: Independent Research Fund Denmark
     logo: /images/logos/irfd-logo.png
     link: https://dff.dk/en/
     body: >
-      This is the description for this sponsor
-      It _supports_ **Markdown**.
+      Individual Postdoctoral Grant [CRC](https://www.fabriziomontesi.com/projects/) (2014--2017).
 
   - name: University of Southern Denmark
     logo: /images/logos/sdu-logo.svg
     link: https://sdu.dk/en
     body: >
-      This is the description for this sponsor
-      It _supports_ **Markdown**.
+      Project hosting and seed funding through the project [Open Data Framework](https://www.fabriziomontesi.com/projects/) (2017--2019).
 ---
 
 Chords is made possible by the efforts of many [people](#people) and generous [sponsors](#sponsors).
@@ -105,6 +100,8 @@ You can contact us by joining this Discord server or sending an individual e-mai
 
 ## Sponsors
 
+The Chords project is made possible by the generous funding and support of the European Research Council (project CHORDS) and previous projects for early explorations of choreographic programming.
+
 {{< sponsor.inline >}}
 
 {{ range .Page.Param "sponsors" }}
@@ -123,7 +120,9 @@ You can contact us by joining this Discord server or sending an individual e-mai
 
 <hr style="margin-top: 5rem;" />
 
+<small>
 Co-funded by the European Union (ERC, CHORDS, 101124225).
 Views and opinions expressed are however those of the authors only
 and do not necessarily reflect those of the European Union or the European Research Council.
 Neither the European Union nor the granting authority can be held responsible for them.
+</small>

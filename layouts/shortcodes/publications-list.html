@@ -33,7 +33,7 @@
                 <li class="hx-inline"><a href="{{ $author.link }}" target="_blank">{{ $author.name }}</a>,&nbsp;</li>
                 {{end}}
             </ul>
-            <b>{{ .title }}.</b> {{ .where }}.
+            <b>{{ .title }}.</b> {{ .where }}, {{ .year }}.
         </div>
         <ul aria-label="external links" style="margin-left: 0;">
             {{ $linksLength := math.Sub (.links | len) 1 }}
