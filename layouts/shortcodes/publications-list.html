@@ -30,7 +30,7 @@
             <ul aria-label="authors" style="margin-left: 0; display: inline-block;">
                 {{ range .authors }}
                 {{ $author := index $data.authors . }}
-                <li class="hx-inline"><a href="{{ $author.link }}" target="_blank">{{ $author.name }}</a>, </li>
+                <li class="hx-inline"><a href="{{ $author.link }}" target="_blank">{{ $author.name }}</a>,&nbsp;</li>
                 {{end}}
             </ul>
             <b>{{ .title }}.</b> {{ .where }}.
@@ -41,7 +41,7 @@
                 <li class="hx-inline">
                     <a href="{{ $element.link }}" target="_blank" rel="noreferrer">{{ $element.label }}</a>
                     {{ if ne $linksLength $index }}
-                    <span aria-hidden="true"> | </span>
+                    <span aria-hidden="true">|&nbsp;</span>
                     {{ end }}
                 </li>
             {{ end}}
