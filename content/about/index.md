@@ -36,6 +36,11 @@ people:
     website: https://qpqp.dk/
     email: viktorstrate@imada.sdu.dk
 
+  - name: Marco Santamaria
+    image: msantamaria.jpg
+    role: PhD Student
+    email: santamaria@imada.sdu.dk
+
 sponsors:
   - name: European Research Council
     logo: /images/logos/erc-logo.svg
