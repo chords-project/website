@@ -29,6 +29,11 @@ people:
     role: Postdoctoral Researcher
     website: https://xyunknown.github.io/
     email: xyqin@imada.sdu.dk
+    
+  - name: Giulia Manara
+    image: giulia.jpg
+    role: Postdoctoral Researcher
+    email: manara@imada.sdu.dk
 
   - name: Viktor Strate Kløvedal
     image: viktorstrate.jpg
