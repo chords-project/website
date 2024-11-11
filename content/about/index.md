@@ -29,7 +29,7 @@ people:
     role: Postdoctoral Researcher
     website: https://xyunknown.github.io/
     email: xyqin@imada.sdu.dk
-    
+
   - name: Giulia Manara
     image: giulia.jpg
     role: Postdoctoral Researcher
@@ -116,11 +116,11 @@ The Chords project is made possible by the generous funding and support of the E
 
 {{ range .Page.Param "sponsors" }}
 
-<div style="display: inline-flex; flex-wrap: wrap; gap: 0 2rem; align-items: center; margin-top: 2rem;">
+<div style="display: inline-flex; flex-wrap: wrap; gap: 0 4rem; align-items: center; margin-top: 2rem;">
   <img src="{{.logo}}" alt="{{.name}}" width="200" height="200" loading="lazy" />
-  <div style="padding: 1rem; flex: 1 1 300px;">
-    <h3>{{.name}}</h3>
-    <p>{{.body | markdownify }}</p>
+  <div style="flex: 1 1 300px;">
+    <h3 style="margin-top: 0;">{{.name}}</h3>
+    <p style="margin-top: 0.5rem;">{{.body | markdownify }}</p>
   </div>
 </div>
 
