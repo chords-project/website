@@ -14,35 +14,41 @@ people:
 
   - name: Marco Peressotti
     image: mperessotti.jpg
+    affiliation: University of Southern Denmark
     role: Associate Professor
     website: https://marcoperessotti.com/
     email: peressotti@imada.sdu.dk
 
   - name: Dan Plyukhin
     image: dplyukhin.jpg
+    affiliation: University of Southern Denmark
     role: Postdoctoral Researcher
     website: https://dplyukhin.github.io/
     email: dplyukhin@imada.sdu.dk
 
   - name: Xueying Qin
     image: xqin.jpg
+    affiliation: University of Southern Denmark
     role: Postdoctoral Researcher
     website: https://xyunknown.github.io/
     email: xyqin@imada.sdu.dk
 
   - name: Giulia Manara
     image: giulia.jpg
+    affiliation: University of Southern Denmark
     role: Postdoctoral Researcher
     email: manara@imada.sdu.dk
 
   - name: Viktor Strate Kløvedal
     image: viktorstrate.jpg
+    affiliation: University of Southern Denmark
     role: PhD Student
     website: https://qpqp.dk/
     email: viktorstrate@imada.sdu.dk
 
   - name: Marco Santamaria
     image: msantamaria.jpg
+    affiliation: University of Southern Denmark
     role: PhD Student
     email: santamaria@imada.sdu.dk
 
@@ -93,6 +99,7 @@ You can contact us by joining this Discord server or sending an individual e-mai
         <div style="text-align: center;">
           <div><b>{{ .name }}</b>,</div>
           <div>{{ .role }}</div>
+          <div>{{ .affiliation }}</div>
           <div style="display: flex; gap: 0.5rem; justify-content: center; margin-top: 0.4rem;">
             <a href="mailto:{{.email}}" title="Email">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
