@@ -1,4 +1,5 @@
 ---
+title: Project Chords
 toc: false
 weight: 1
 ---
