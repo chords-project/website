@@ -5,13 +5,14 @@ weight: 1
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-  Chords Project
+  <!-- Chords Project -->
+  <img src="/images/data-choreographies-system.svg" style="margin: auto; max-height: 400px;"/>
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Welcome to Chords!
+  Welcome to the Chords project!
 {{< /hextra/hero-subtitle >}}
 
 The Chords project investigates the foundations and application of [Choreographic Programming](https://en.wikipedia.org/wiki/Choreographic_programming), an innovative programming paradigm for the development of concurrent and distributed systems.
