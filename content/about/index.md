@@ -19,6 +19,12 @@ people:
     website: https://marcoperessotti.com/
     email: peressotti@imada.sdu.dk
 
+  - name: Giulia Manara
+    image: giulia.jpg
+    affiliation: University of Southern Denmark
+    role: Postdoctoral Researcher
+    email: manara@imada.sdu.dk
+
   - name: Dan Plyukhin
     image: dplyukhin.jpg
     affiliation: University of Southern Denmark
@@ -32,12 +38,6 @@ people:
     role: Postdoctoral Researcher
     website: https://xyunknown.github.io/
     email: xyqin@imada.sdu.dk
-
-  - name: Giulia Manara
-    image: giulia.jpg
-    affiliation: University of Southern Denmark
-    role: Postdoctoral Researcher
-    email: manara@imada.sdu.dk
 
   - name: Viktor Strate Kløvedal
     image: viktorstrate.jpg
