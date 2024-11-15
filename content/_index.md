@@ -12,10 +12,10 @@ weight: 1
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Welcome to the Chords project!
+  Welcome to Project Chords!
 {{< /hextra/hero-subtitle >}}
 
-The Chords project investigates the foundations and application of [Choreographic Programming](https://en.wikipedia.org/wiki/Choreographic_programming), an innovative programming paradigm for the development of concurrent and distributed systems.
+Project Chords investigates the foundations and application of [Choreographic Programming](https://en.wikipedia.org/wiki/Choreographic_programming), an innovative programming paradigm for the development of concurrent and distributed systems.
 In [choreographic programming languages](https://www.fabriziomontesi.com/bliki/ChoreographicProgramming), programs are _choreographies_ that codify coordination plans: they manifestly express where data is located and the communications that processes should perform together in order to reach a common goal.
 
 By establishing suitable abstractions to express choreographies, choreographic programming can make the development of communicating systems both faster and safer.

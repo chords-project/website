@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: Chords Project
+title: Project Chords
 
 # import hextra as module
 module:
@@ -63,6 +63,10 @@ menu:
   
 
 params:
+  title: Project Chords
+  description: Project Chords is a research project that investigates the foundations and applications of Choreographic Programming, a programming paradigm for concurrent and distributed systems.
+  images:
+    - /images/data-choreographies-system-with-bg.jpg
   page:
     width: full
 
