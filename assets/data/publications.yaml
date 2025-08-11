@@ -11,8 +11,40 @@ authors:
   sgiallorenzo:
     name: Saverio Giallorenzo
     link: https://dblp.uni-trier.de/pid/146/2078
+  xyqin:
+    name: Xueying Qin
+    link: https://dblp.uni-trier.de/pid/94/6767
+  gagha:
+    name: Gul Agha
+    link: https://dblp.uni-trier.de/pid/a/GulAAgha
 
 publications:
+  - title: 'Relax! The Semilenient Core of Choreographic Programming (Functional Pearl)'
+    authors:
+      - dplyukhin
+      - xyqin
+      - fmontesi
+    year: 2025
+    where: 'In Proc. ACM Program. Lang. ICFP 2025, pp. 269:1-269:27'
+    links:
+      - label: doi.org
+        link: https://doi.org/10.1145/3747538
+
+  - title: 'CRGC: Fault-Recovering Actor Garbage Collection in Pekko'
+    authors:
+      - dplyukhin
+      - gagha
+      - fmontesi
+    year: 2025
+    where: 'In Proc. ACM Program. Lang. PLDI 2025, pp. 185:1-185:25'
+    links:
+      - label: doi.org
+        link: https://doi.org/10.1145/3729288
+      - label: Video
+        link: https://www.youtube.com/live/lGM37Z3oDKw?si=98JVl-qcgMk9c4_f&t=12105
+      - label: Slides
+        link: https://dplyukhin.github.io/talks/CRGC-talk.pdf
+
   - title: 'Ozone: Fully Out-of-Order Choreographies'
     authors:
       - dplyukhin

@@ -1,10 +1,18 @@
 news:
+- title: 📝 ICFP'25 paper
+  date: 2025-07-15
+  contents: |
+    The paper 'Relax! The Semilenient Core of Choreographic Programming (Functional Pearl)' by Dan Plyukhin, Xueying Qin, and Fabrizio Montesi has been accepted at [ICFP 2025](https://icfp25.sigplan.org/).
+- title: 📝 PLDI'25 paper
+  date: 2025-04-27
+  contents: |
+    The paper 'CRGC: Fault-Recovering Actor Garbage Collection in Pekko' by Dan Plyukhin, Gul Agha, and Fabrizio Montesi has been accepted at [PLDI 2025](https://pldi25.sigplan.org/).
 - title: 📝 ESOP'25 paper
   date: 2024-12-19
   contents: |
     The paper 'Formulas as Processes, Deadlock-Freedom as Choreographies' by Matteo Acclavio, Giulia Manara, and Fabrizio Montesi has been accepted for publication at [ESOP 2025](https://etaps.org/2025/conferences/esop/).
 - title: 📝 ESOCC'25 paper
-  datetime: 2024-11-18
+  date: 2024-11-18
   contents: |-
     The paper 'A Conceptual Framework for API Refactoring in Enterprise Application Architectures' by Fabrizio Montesi, Marco Peressotti, and Valentino Picotti has been accepted at [ESOCC 2025](https://conf.researchr.org/home/esocc-2025)!
 - title: 🎉 Website opening
@@ -12,14 +20,14 @@ news:
   contents: |
     The Chords project website goes online!
 - title: 📝 ICSOC'24 paper
-  datetime: 2024-10-07
+  date: 2024-10-07
   contents: |-
     The paper 'Choreography-Defined Network - A Case Study in DoS Mitigation' by Saverio Giallorenzo, Jacopo Mauro, Andrea Melis, Fabrizio Montesi, Marco Peressotti, and Marco Prandini has been accepted at [ICSOC 2024](https://icsoc2024.redcad.tn/)!
 - title: 📝 ICSOC'24 paper
-  datetime: 2024-10-07
+  date: 2024-10-07
   contents: |-
     The paper 'A Toolchain for Checking Domain- and Model-driven Properties of Jolie Microservices' by Saverio Giallorenzo, Fabrizio Montesi, Marco Peressotti, Florian Rademacher, Sabine Sachweh, and Philip Wizenty has been accepted at [ICSOC 2024](https://icsoc2024.redcad.tn/)!
 - title: 📝 ECOOP'24 paper
-  datetime: 2024-07-11
+  date: 2024-07-11
   contents: |-
     The paper 'Ozone: Fully Out-of-Order Choreographies' has been accepted at ECOOP 2024!
