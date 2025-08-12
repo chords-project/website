@@ -17,8 +17,25 @@ authors:
   gagha:
     name: Gul Agha
     link: https://dblp.uni-trier.de/pid/a/GulAAgha
+  gmanara:
+    name: Giulia Manara
+    link: https://dblp.uni-trier.de/pid/378/6497
+  macclavio:
+    name: Matteo Acclavio
+    link: https://dblp.org/pid/182/1948
 
 publications:
+  - title: 'Formulas as Processes, Deadlock-freedom as Choreographies'
+    authors:
+      - macclavio
+      - gmanara
+      - fmontesi
+    year: 2025
+    where: 'In Vafeiadis, V. (eds) Programming Languages and Systems. ESOP 2025. Lecture Notes in Computer Science, vol 15694. Springer, Cham.'
+    links: 
+      - label: doi.org
+        link: https://doi.org/10.1007/978-3-031-91118-7_2
+
   - title: 'Relax! The Semilenient Core of Choreographic Programming (Functional Pearl)'
     authors:
       - dplyukhin
